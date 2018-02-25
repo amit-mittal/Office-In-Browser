@@ -1,0 +1,32 @@
+{
+  "manifest_version": 2,
+
+  "name": "Open with Office Online",
+  "description": "This extension is to open office files in the browser",
+  "version": "1.0",
+
+  "permissions": [
+    "contextMenus",
+    "identity",
+    "tabs",
+    "activeTab",
+    "<all_urls>",
+    "https://login.live.com/oauth20_authorize.srf?client_id=0000000044154892&scope=onedrive.appfolder&redirect_uri=http://microsoft.com&request_type=token"
+  ],
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_title": "",
+    "default_popup": "index.html"
+  },
+
+  "background": {
+    "persistent": false,
+    "scripts": ["jquery.js", "sample.js"]
+  },
+
+  "icons": { "16": "icon.png",
+           "48": "icon.png",
+          "128": "icon.png" 
+  }
+}
